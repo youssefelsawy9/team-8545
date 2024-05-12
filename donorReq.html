@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor List</title>
+    <link rel="stylesheet" href="adminMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="admin.js"></script>
+</head>
+<body>
+    <a href="adminProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+    <div class="container">
+        <div class="sidebar">
+            <img src="resources/logoR.png" alt="Logo">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="viewOrg.html">- Organizations</a>
+                        <a href="viewDonor.html">- Donors</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">Review Submissions <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="orgReq.html">- Organization Submissions</a>
+                        <a href="donorReq.html">- Donor Submissions</a>
+                    </div>
+                </li>
+                
+            </ul>
+
+            <a href="index.html" class="logout">
+                Logout
+            </a>
+            <a href="adminMenu.html" class="home">
+                Home
+            </a>
+            
+        </div>
+        <div class="content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search donors...">
+                <div class="filter-dropdown">
+                    <button class="filter-btn">Filter <i class="bx bx-caret-down"></i></button>
+                    <div class="filter-content">
+                        <a href="#">Teachers</a>
+                        <a href="#">Doctors</a>
+                        <!-- Add more filter categories here -->
+                    </div>
+                </div>
+                <button type="submit"><i class="bx bx-search"></i></button>
+            </div>
+            <div class="card">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-info">
+                    <h3>John Doe</h3>
+                    <p>Age: 35 | Gender: Male | Occupation: Teacher</p>
+                    <p>Location: New York, USA</p>
+                    <a href="jhon.html">Details</a>
+                    <div class="buttons">
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-info">
+                    <h3>Jane Smith</h3>
+                    <p>Age: 28 | Gender: Female | Occupation: Doctor</p>
+                    <p>Location: London, UK</p>
+                    <a href="jane.html">Details</a>
+                    <div class="buttons">
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-info">
+                    <h3>Michael Johnson</h3>
+                    <p>Age: 40 | Gender: Male | Occupation: Teacher</p>
+                    <p>Location: Sydney, Australia</p>
+                    <a href="michel.html">Details</a>
+                    <div class="buttons">
+                        <button class="accept-btn">Accept</button>
+                        <button class="reject-btn">Reject</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more donor cards here -->
+        </div>
+    </div>
+</body>
+</html>
