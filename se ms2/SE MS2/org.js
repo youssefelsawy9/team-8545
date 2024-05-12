@@ -185,7 +185,6 @@ document.addEventListener('DOMContentLoaded', function () {
             showItemsByArea(selectedArea);
         });
     });
-
     const rejectButtons = document.querySelectorAll('.reject-btn');
 
     // Add click event listener to each reject button
@@ -198,6 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
     
 });
 

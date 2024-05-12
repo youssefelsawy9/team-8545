@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Details</title>
+    <link rel="stylesheet" href="adminMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="profile.js"></script>
+</head>
+<body>
+    <a href="donorProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+    <div class="container">
+        <div class="sidebar">
+            <img src="resources/logoR.png" alt="Logo">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="Items.html">- Requested Items</a>
+                        <a href="viewMed.html">- Medical Cases</a>
+                        <a href="viewTeach.html">- Teaching Cases</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="index.html" class="logout">Logout</a>
+            <a href="donorMenu.html" class="home">Home</a>
+        </div>
+        <div class="content">
+            <div class="organization-details">
+                <img src="resources/profile.png" alt="Jane Smith's Profile Picture" style="width: 200px; height: 200px;">
+                <div class="details">
+                    <h2>Donor</h2>
+                    <p><strong>Username:</strong> Jhon Doe</p>
+                    <button id="choose-role-btn">Choose Role</button>
+                    <div id="role-options" class="role-options" style="display: none;">
+                        <label for="role"> Role:</label>
+                        <select id="role">
+                            <option value="doctor">Doctor</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                        <div id="doctor-options" style="display: none;">
+                            <label for="clinic-location">Paste Clinc Location Link:</label>
+                            <input type="text" id="clinic-location">
+                            <br>
+                            <label for="file">Upload Documentation for Verification:</label>
+                        <input type="file" id="file">
+                        <br>
+                        <button id="save-role-btn">Finish</button>
+                        </div>
+                        <div id="teacher-options" style="display: none;">
+                            <label for="subjects">Select Subject(s) to Teach:</label><br>
+                            <input type="checkbox" id="english" name="subject" value="english">
+                            <label for="english">English</label><br>
+                            <input type="checkbox" id="math" name="subject" value="math">
+                            <label for="math">Math</label><br>
+                            <input type="checkbox" id="science" name="subject" value="science">
+                            <label for="science">Science</label><br>
+                            <input type="checkbox" id="arabic" name="subject" value="arabic">
+                            <label for="arabic">Arabic</label><br>
+                            <input type="checkbox" id="physics" name="subject" value="physics">
+                            <label for="physics">Physics</label><br>
+                            <input type="checkbox" id="biology" name="subject" value="biology">
+                            <label for="biology">Biology</label><br>
+                            <br>
+                            <label for="file">Upload Documentation for Verification:</label>
+                        <input type="file" id="file">
+                        <br>
+                        <button id="save-role">Finish</button>
+                        </div>
+                        
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <a href="donorMenu.html"><span class="close" onclick="closePopup()">&times;</span></a>
+            <img src="resources/success.png" alt="Success Image">
+            <p>Success! Your Request will be processed.</p>
+        </div>
+    </div>
+</body>
+</html>

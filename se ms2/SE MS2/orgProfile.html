@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrganizationMenu</title>
+    <link rel="stylesheet" href="adminMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="apply.js"></script>
+</head>
+<body>
+   <a href="orgProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+    <div class="container">
+        <div class="sidebar">
+            <img src="resources/logoR.png" alt="Logo">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="running.html">- Running Posts</a>
+                        <a href="full.html">- Fullfiled Posts</a>
+
+                    </div>
+                </li>
+                
+                
+            </ul>
+
+            <a href="index.html" class="logout">
+                Logout        </a>
+                <a href="orgMenu.html" class="home">
+                    Home        </a>
+            
+        </div>
+        <div class="content">
+
+            <div class="content">
+                <div class="organization-details">
+                    <img src="resources/profile.png" alt="Jane Smith's Profile Picture" style="width: 200px; height: 200px;">
+                    <div class="details">
+                        <h2>Organization</h2>
+                        <p><strong>Username:</strong> Adam Smith</p>
+                        <p><strong>Organization:</strong>Hope for children</p>
+                        <p><strong>Location:</strong> Nicosia, Cyprus</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5348657.221293214!2d24.659785942936622!3d36.345526210342136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de19dce4cb2d8b%3A0x8515775f4fe03afb!2s%22Hope%20For%20Children%22%20CRC%20Policy%20Center!5e0!3m2!1sen!2seg!4v1715339473001!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p><strong>Description:</strong> A non-profit organization committed to improving the lives of underprivileged children through education and healthcare initiatives.</p>
+                        <p><strong>Website:</strong> <a href="https://www.hopeforchildren.org">www.hopeforchildren.org</a></p>
+                        <p><strong>Contact:</strong> info@hopeforchildren.org</p>
+                        <!-- Representative Information -->
+                        <button class="donate-button" id="donate-button">Update</button>
+
+                        <div class="extra-fields" id="extra-fields" style="display: none;">
+                            <label for="desc">Representative Names: </label>
+                            <input type="text" id="desc" name="desc"><br><br>
+                            <label for="desc">Email: </label>
+                            <input type="text" id="desc" name="desc"><br><br>
+                            <label for="desc">Phone Number: </label>
+                            <input type="text" id="desc" name="desc"><br><br>
+                            <label for="desc">Paste Location url: </label>
+                            <input type="text" id="desc" name="desc"><br><br>
+                            <label for="desc">Description: </label>
+                            <input type="text" id="desc" name="desc"><br><br>
+                            <label for="file">Upload Documentation for Verification:</label>
+                        <input type="file" id="file">
+
+                            
+                            <button class="donate-button" id="finish-button" >Save</button>
+                        </div>
+                        <div id="popup" class="popup">
+                            <div class="popup-content">
+                                <a href="orgMenu.html"><span class="close" onclick="closePopup()">&times;</span></a>
+                                <img src="resources/success.png" alt="Success Image">
+                                <p>Success! Account info has been updated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
