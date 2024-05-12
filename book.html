@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Donation Details</title>
+    <link rel="stylesheet" href="adminMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="apply.js"></script>
+</head>
+<body>
+    <a href="adminProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+    <div class="container">
+        <div class="sidebar">
+            <img src="resources/logoR.png" alt="Logo">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="Items.html">- Requested Items</a>
+                        <a href="viewMed.html">- Medical Cases</a>
+                        <a href="viewTeach.html">- Teaching Cases</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="index.html" class="logout">Logout</a>
+            <a href="donorMenu.html" class="home">Home</a>
+        </div>
+        <div class="content">
+            <div class="organization-details">
+                <img src="resources/pp.jpeg" alt="Book Image">
+                <div class="details">
+                    <h2>Donation Details</h2>
+                    <p><strong>Book Name:</strong> Pride and Prejudice</p>
+                    <p><strong>Author:</strong> Jane Austen</p>
+                    <p><strong>Language:</strong> English</p>
+                    <p><strong>Edition:</strong> 1st Edition</p>
+                    <p><strong>Summary:</strong> Pride and Prejudice is a romantic novel by Jane Austen, first published in 1813. The story follows the main character, Elizabeth Bennet, as she deals with issues of manners, upbringing, morality, education, and marriage in the society of the landed gentry of the British Regency. The novel revolves around the themes of love, reputation, class, and marriage.</p>
+                    <p><strong>Quantity Requested:</strong> 20 copies</p>
+                    <p><strong>Donation Progress:</strong></p>
+                    <div role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100" style="--value: 56"></div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p><strong>Deadline:</strong> August 15, 2024</p>
+                    <button class="donate-button" id="donate-button">Donate</button>
+
+                    <div class="extra-fields" id="extra-fields" style="display: none;">
+                        <p><strong>Quantity:</strong> <input type="number" id="quantity"></p>
+                        <p><strong>Transportation Type:</strong>
+                            <select id="transportation">
+                                <option value="truck">Truck</option>
+                                <option value="car">Car</option>
+                                <option value="motorcycle">Motorcycle</option>
+                            </select>
+                        </p>
+                        <p><strong>Address:</strong> <input type="text" id="location"></p>
+                        <button class="donate-button" id="finish-button" >Finish</button>
+                    </div>
+                    <div id="popup" class="popup">
+                        <div class="popup-content">
+                            <a href="donorMenu.html"><span class="close" onclick="closePopup()">&times;</span></a>
+                            <img src="resources/success.png" alt="Success Image">
+                            <p>Success! Your donation will be delivered within 3-5 business days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Get the donate button
- 
+    
 
     // Get all filter buttons
     const filterButtons = document.querySelectorAll('.filter-btn');
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to show items based on selected speciality
     function showItemsBySpeciality(speciality) {
         cards.forEach(card => {
-            const cardSpeciality = card.getAttribute('speciality')
+            const cardSpeciality = card.getAttribute('subject')
             if (speciality === 'all' || cardSpeciality === speciality) {
                 card.style.display = 'block';
             } else {
@@ -149,10 +149,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Get all filter options
-    const specialtyFilterOptions = document.querySelectorAll('.filter-content a[speciality]');
+    const specialtyFilterOptions = document.querySelectorAll('.filter-content a[subject]');
     specialtyFilterOptions.forEach(option => {
         option.addEventListener('click', function () {
-            const selectedSpeciality = this.getAttribute('speciality');
+            const selectedSpeciality = this.getAttribute('subject');
             showItemsBySpeciality(selectedSpeciality);
         });
     });

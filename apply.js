@@ -84,7 +84,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Get the donate button
- 
+    const donateButton = document.getElementById('donate-button');
+    const extraFields = document.getElementById('extra-fields');
+    const finishButton = document.getElementById('finish-button');
+
+    // Event listener for the donate button
+    donateButton.addEventListener('click', function () {
+        // Show the extra fields when the donate button is clicked
+        extraFields.style.display = 'block';
+    });
+
+    // Event listener for the finish button
+    finishButton.addEventListener('click', function () {
+        // Show the success popup when the finish button is clicked
+        const popup = document.getElementById('popup');
+        popup.style.display = 'block';
+    });
+
+
 
     // Get all filter buttons
     const filterButtons = document.querySelectorAll('.filter-btn');
