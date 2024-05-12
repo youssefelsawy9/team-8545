@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Cases</title>
+    <link rel="stylesheet" href="adminMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="teach.js"></script>
+</head>
+<body>
+    <a href="adminProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+    <div class="container">
+        <div class="sidebar">
+            <img src="resources/logoR.png" alt="Logo">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="Items.html">- Requested Items</a>
+                        <a href="viewMed.html">- Medical Cases</a>
+                        <a href="viewDonor.html">- Teaching Cases</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="index.html" class="logout">Logout</a>
+            <a href="donorMenu.html" class="home">Home</a>
+        </div>
+        <div class="filters"></div>
+        <div class="content">
+            <div class="search-bar">
+                
+                <div class="filter-dropdown">
+                    <button class="filter-btn">Subject <i class="bx bx-caret-down"></i></button>
+                    <div class="filter-content">
+                        <a href="#" subject="english">English</a>
+                        <a href="#" subject="math">Maths</a>
+                        <a href="#" subject="science">Science</a>
+                        <!-- Add more filter categories here -->
+                    </div>
+                </div><div class="filter-dropdown">
+                    <button class="filter-btn">Governorate <i class="bx bx-caret-down"></i></button>
+                    <div class="filter-content">
+                        <a href="#" governorate="Cairo">Cairo</a>
+                        <a href="#" governorate="Giza">Giza</a>
+                        <a href="#"  governorate="Alexandria">Alexandria</a>
+                        <!-- Add more filter categories here -->
+                    </div>
+                </div><div class="filter-dropdown">
+                    <button class="filter-btn">Area <i class="bx bx-caret-down"></i></button>
+                    <div class="filter-content">
+                        <a href="#" area="Nasr-City">Nasr-City</a>
+                        <a href="#" area="Shobra">Shobra</a>
+                        <a href="#" area="Montazah">Montazah</a>
+                        <a href="#"  area="Zamalek">Zamalek</a>
+                        <!-- Add more filter categories here -->
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card" subject="english"  governorate="Cairo" area="Zamalek">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>English Teaching Post</h3>
+                    <p>Subjects: English, Mathematics</p>
+                    <p>Requested by: Global Education Initiative</p>
+                    <p>Location: Zamalek, Cairo</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                   <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            
+            <div class="card" subject="math"  governorate="Giza" area="Shobra">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>Mathematics Teaching Post</h3>
+                    <p>Subjects: Mathematics, Physics</p>
+                    <p>Requested by: Educate Egypt Foundation</p>
+                    <p>Location: Shobra, Giza</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            
+            <div class="card" subject="science" governorate="Alexandria" area="Montazah">
+                <img src="resources/profile.png" alt="Donor Image">
+                  <div class="card-header">
+                    <h3>Science Teaching Post</h3>
+                    <p>Subjects: Science, Biology</p>
+                    <p>Requested by: Alexandria Education Trust</p>
+                    <p>Location: Montazah, Alexandria</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            <div class="card" subject="english"  governorate="Cairo" area="Nasr-City">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>Language Arts Teaching Post</h3>
+                    <p>Subjects: English, Language Arts</p>
+                    <p>Requested by: Cairo Education Foundation</p>
+                    <p>Location: Nasr City, Cairo</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            
+            <div class="card" subject="math"  governorate="Giza" area="Montazah">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>Mathematics and Statistics Teaching Post</h3>
+                    <p>Subjects: Mathematics, Statistics</p>
+                    <p>Requested by: Giza Education Initiative</p>
+                    <p>Location: Montazah, Giza</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            
+            <div class="card" subject="science" governorate="Alexandria" area="Zamalek">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>Environmental Science Teaching Post</h3>
+                    <p>Subjects: Science, Environmental Studies</p>
+                    <p>Requested by: Zamalek Educational Trust</p>
+                    <p>Location: Zamalek, Alexandria</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            
+            <div class="card" subject="english"  governorate="Cairo" area="Shobra">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>English Literature Teaching Post</h3>
+                    <p>Subjects: English, Literature</p>
+                    <p>Requested by: Shobra Education Association</p>
+                    <p>Location: Shobra, Cairo</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            
+            <div class="card" subject="math"  governorate="Giza" area="Zamalek">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>Mathematics and Geometry Teaching Post</h3>
+                    <p>Subjects: Mathematics, Geometry</p>
+                    <p>Requested by: Zamalek Mathematics Society</p>
+                    <p>Location: Zamalek, Giza</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase.html">Details</a>
+                </div>
+            </div>
+            
+            <div class="card" subject="science" governorate="Alexandria" area="Nasr-City">
+                <img src="resources/profile.png" alt="Donor Image">
+                <div class="card-header">
+                    <h3>Chemistry Teaching Post</h3>
+                    <p>Subjects: Science, Chemistry</p>
+                    <p>Requested by: Nasr City Chemistry Club</p>
+                    <p>Location: Nasr City, Alexandria</p>
+                </div>
+                <div class="card-body">
+                    <!-- Card body content here -->
+                    <a href="teachingCase9.html">Details</a>
+                </div>
+            </div>
+           
+            <!-- Add more item cards for other categories -->
+        </div>
+    </div>
+</body>
+</html>
