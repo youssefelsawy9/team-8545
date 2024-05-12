@@ -43,18 +43,22 @@
                 <img src="resources/profile.png" alt="Jane Smith's Profile Picture" style="width: 200px; height: 200px;">
 
                 <div class="details">
-                    <h2>Jane Smith</h2>
-                    <p><strong>Location:</strong> London, UK</p>
-                    <p><strong>Description:</strong> Jane Smith is a highly skilled and compassionate doctor dedicated to improving healthcare access and outcomes for communities in need. With years of experience in medical practice and humanitarian work, she has made significant contributions to various healthcare initiatives.</p>
-                    <p><strong>Contact:</strong> jane.smith@example.com</p>
-                    <!-- Documentation Link -->
-                    <h3>Documentation:</h3>
-                    <a href="resources/orgDoc.pdf" target="_blank">View Documentation</a>
+                    <h2>Admin</h2>
+                    <p><strong>Username:</strong> Admin1</p>
+                    <button id="change-password-btn">Change Password</button>
+
+                    <!-- New fields for changing password -->
+                    <div id="change-password-fields" style="display: none;">
+                        <label for="old-password">Old Password:</label>
+                        <input type="password" id="old-password" name="old-password"><br><br>
+                        <label for="new-password">New Password:</label>
+                        <input type="password" id="new-password" name="new-password"><br><br>
+                        <button id="save-password-btn">Save</button>
+                    </div>
                 </div>
             </div>
             
         </div>
     </div>
-    <script src="adminMenu.js"></script>
 </body>
 </html>

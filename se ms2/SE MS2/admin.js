@@ -38,4 +38,38 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    const changePasswordBtn = document.getElementById('change-password-btn');
+    const changePasswordFields = document.getElementById('change-password-fields');
+    const savePasswordBtn = document.getElementById('save-password-btn');
+
+    // Add click event listener to the "Change Password" button
+    changePasswordBtn.addEventListener('click', function () {
+        // Toggle the visibility of the change password fields
+        changePasswordFields.style.display = 'block';
+        // Disable the "Change Password" button
+        changePasswordBtn.disabled = true;
+    });
+
+    // Add click event listener to the "Save" button
+    savePasswordBtn.addEventListener('click', function () {
+        // Get the old and new passwords from the input fields
+        const oldPassword = document.getElementById('old-password').value;
+        const newPassword = document.getElementById('new-password').value;
+        
+        // Here you can implement the logic to validate the old password and update it with the new one
+        // For now, let's just log them to the console
+        console.log('Old Password:', oldPassword);
+        console.log('New Password:', newPassword);
+
+        // After saving, hide the change password fields and enable the "Change Password" button
+        changePasswordFields.style.display = 'none';
+        changePasswordBtn.disabled = false;
+
+        // Clear the input fields
+        document.getElementById('old-password').value = '';
+        document.getElementById('new-password').value = '';
+
+        // Optionally, you can show a success message or perform other actions here
+    });
 });

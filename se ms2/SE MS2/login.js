@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const username = usernameInput.value;
         console.log(username);
         const password = passwordInput.value;
-        console.log(password);
+        console
 
         // Check username and password values and redirect accordingly
         if (username === 'admin' && password === '1234') {

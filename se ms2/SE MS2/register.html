@@ -55,7 +55,17 @@
                         <input type="radio" id="organization" name="role" value="organization">
                         <label for="organization">Organization</label>
                     </div>
-                    <div id="organization-info" class="additional-info" style="display: none;">
+                    <div class="radio-buttons">
+                    <div id="donor-info" class="additional-info don">
+                        <!-- Additional donor information inputs -->
+                        <input type="radio" id="regular-donor" name="donor-type" value="regular" checked>
+                        <label for="regular-donor">Regular Donor</label>
+                        <input type="radio" id="teacher" name="donor-type" value="teacher">
+                        <label for="teacher">Teacher</label>
+                        <input type="radio" id="doctor" name="donor-type" value="doctor">
+                        <label for="doctor">Doctor</label>
+                    </div></div>
+                    <div id="organization-info" class="additional-info org" style="display: none;">
                         <!-- Additional organization information inputs -->
                         <input type="text" placeholder="Organization Name" required>
                         <input type="text" placeholder="Organization Type" required>
