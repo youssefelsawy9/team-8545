@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching Case Details</title>
+    <title>Post Details</title>
     <link rel="stylesheet" href="adminMenu.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="apply.js"></script>
 </head>
 <body>
-    <a href="donorProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
-    <a href="donorNotif.html"><img class="notif-img" src="resources/notif.png" alt="Profile Image"></a> 
+   <a href="orgProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+   <a href="orgNotif.html"><img class="notif-img" src="resources/notif.png" alt="Profile Image"></a> 
     <div class="container">
         <div class="sidebar">
             <img src="resources/logoR.png" alt="Logo">
@@ -18,16 +18,23 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
                     <div class="dropdown-content">
-                        <a href="Items.html">- Requested Items</a>
-                        <a href="viewMed.html">- Medical Cases</a>
-                        <a href="viewDonor.html">- Teaching Cases</a>
+                        <a href="running.html">- Running Posts</a>
+                        <a href="full.html">- Fullfiled Posts</a>
+
                     </div>
                 </li>
+                
+                
             </ul>
-            <a href="index.html" class="logout">Logout</a>
-            <a href="donorMenu.html" class="home">Home</a>
+
+            <a href="index.html" class="logout">
+                Logout        </a>
+                <a href="orgMenu.html" class="home">
+                    Home        </a>
+            
         </div>
         <div class="content">
+                
             <div class="organization-details">
                 <img src="resources/classroom.jpeg" alt="Teaching Case Image">
                 <div class="details">
@@ -36,22 +43,21 @@
                     <p><strong>Location:</strong> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27628.54710836094!2d31.21155510709328!3d30.049238061536126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458408fd8e3d0d3%3A0x3d1d0bef806e62da!2sSahara%20International%20School!5e0!3m2!1sen!2seg!4v1715097946078!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
                     <p><strong>Address:</strong> 456 Education Street, Town, Country</p>
                     <p><strong>Subjects to be Taught:</strong> Mathematics, Science, and English</p>
-                    <button class="donate-button" id="donate-button">Apply</button>
-
-                    <div class="extra-fields" id="extra-fields" style="display: none;">
-                        <p><strong>Comment:</strong> <input type="text" id="details"></p>
-                        <button class="donate-button" id="finish-button" >Finish</button>
-                    </div>
-                    <div id="popup" class="popup">
-                        <div class="popup-content">
-                            <a href="donorMenu.html"><span class="close" >&times;</span></a>
-                            <img src="resources/success.png" alt="Success Image">
-                            <p>Success!Your Application will be proccessed and reviewed .</p>
+                    <h3>Fullfiled By:</h3>
+                    <div class="card">
+                        <img src="resources/profile.png" alt="Donor Image">
+                        <div class="card-info">
+                            <h3>Jane Smith</h3>
+                            <p>Age: 28 | Gender: Female | Occupation: Teacher</p>
+                            <p>Location: London, UK</p>
+                            <a href="janeOrg.html">Details</a>
+                            
                         </div>
                     </div>
+                   
                 </div>
             </div>
-        </div>
+            <!-- Add more card elements here -->
     </div>
 </body>
 </html>

@@ -78,6 +78,37 @@ body, html {
     transform: scale(1.1);
 }
 
+.notif-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: fixed;
+    top: 80px;
+    right: -10px;
+
+}
+
+.notif-img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.add-img {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 180px;
+    right: 10px;
+
+}
+
+.add-img:hover {
+    transform: scale(1.1);
+}
+
+
 
 .logout{
     color: #fff;
@@ -248,7 +279,10 @@ body, html {
 
 
 #change-password-btn,
-#save-password-btn {
+#save-password-btn,
+#choose-role-btn,
+#save-role-btn,
+#save-role {
     background-color: #8b0000;
     color: #fff;
     border: none;
@@ -257,10 +291,14 @@ body, html {
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 #change-password-btn:hover,
-#save-password-btn:hover {
+#save-password-btn:hover,
+#choose-role-btn:hover,
+#save-role-btn:hover,
+#save-role:hover {
     background-color: #fff;
     color: #8b0000;
     border: #8b0000 solid 2px;
@@ -406,3 +444,6 @@ body, html {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+

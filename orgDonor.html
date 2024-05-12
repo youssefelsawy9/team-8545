@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Menu</title>
+    <link rel="stylesheet" href="adminMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="donor.js"></script>
+</head>
+<body>
+   <a href="donorProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+   <a href="donorNotif.html"><img class="notif-img" src="resources/notif.png" alt="Profile Image"></a> 
+    <div class="container">
+        <div class="sidebar">
+            <img src="resources/logoR.png" alt="Logo">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="Items.html">- Requested Items</a>
+                        <a href="viewMed.html">- Medical Cases</a>
+                        <a href="viewTeach.html">- Teaching Cases</a>
+
+                    </div>
+                </li>
+                
+                
+            </ul>
+
+            <a href="index.html" class="logout">
+                Logout        </a>
+                <a href="donorMenu.html" class="home">
+                    Home        </a>
+            
+        </div>
+        <div class="content">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search organizations...">
+                <div class="filter-dropdown">
+                    <button class="filter-btn">Filter <i class="bx bx-caret-down"></i></button>
+                    <div class="filter-content">
+                        <a href="#">Health</a>
+                        <a href="#">Refugee Aid</a>
+                        <a href="#">Orphanage</a>
+                        <!-- Add more filter categories here -->
+                    </div>
+                </div>
+                <button type="submit"><i class="bx bx-search"></i></button>
+            </div>
+            <div class="card">
+                <img src="resources/global aid.png" alt="Organization Image">
+                <div class="card-info">
+                    <h3>Global Aid Foundation</h3>
+                    <p>An international organization dedicated to providing aid and resources to disadvantaged communities worldwide.</p>
+                    <a href="globD.html">Details</a>
+                    <div class="buttons">
+                        <button style="display: none;" class="reject-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/hope for children.png" alt="Organization Image">
+                <div class="card-info">
+                    <h3>Hope for Children</h3>
+                    <p>A non-profit organization committed to improving the lives of underprivileged children through education and healthcare initiatives.</p>
+                    <a href="globD.html">Details</a>
+                    <div class="buttons">
+                        <button style="display: none;" class="reject-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/health initiative.jpeg" alt="Organization Image">
+                <div class="card-info">
+                    <h3>Community Health Initiative</h3>
+                    <p>Working towards promoting health and wellness in local communities through awareness campaigns and medical assistance programs.</p>
+                    <a href="globD.html">Details</a>
+                    <div class="buttons">
+                        <button style="display: none;" class="reject-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more organization cards here -->
+                
+            
+            <!-- Add more card elements here -->
+    </div>
+</body>
+</html>

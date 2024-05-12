@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrganizationMenu</title>
+    <link rel="stylesheet" href="adminMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="org.js"></script>
+</head>
+<body>
+   <a href="orgProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+   
+   <a href="orgNotif.html"><img class="notif-img" src="resources/notif.png" alt="Profile Image"></a> 
+    <div class="container">
+        <div class="sidebar">
+            <img src="resources/logoR.png" alt="Logo">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="running.html">- Running Posts</a>
+                        <a href="full.html">- Fullfiled Posts</a>
+
+                    </div>
+                </li>
+                
+                
+            </ul>
+
+            <a href="index.html" class="logout">
+                Logout        </a>
+                <a href="orgMenu.html" class="home">
+                    Home        </a>
+            
+        </div>
+        <div class="content">
+                
+            <div class="content">
+                
+              
+    
+                <!-- Toys -->
+               <div class="card" data-category="toys">
+                    <img src="resources/classroom.jpeg" alt="Item Image">
+                    <div class="card-info">
+                        <h3>Teaching Case</h3>
+                        <p>Type:Elementry</p>
+                        <p>Time:2:00PM-3:300PM Wednesday</p>
+                        <p>Duration: 3 weeks</p>
+                        <p>Deadline: July 10, 2024</p>
+                        <p> Description:.</p>
+                        <a href="fullPost.html">Details</a>
+                    </div>
+                    <div class="buttons">
+                        <button class="reject-btn">Delete</button>
+                    </div>
+                </div>
+    
+                <!-- Food -->
+                <div class="card" data-category="medical">
+                    <img src="resources/medical.jpeg" alt="Item Image">
+                    <div class="card-info">
+                        <h3>Medical Case </h3>
+                        <p>Type: Cardiology</p>
+                        <p>Date: July 15, 2024</p>
+                        <p>Time: 9:00 AM - 12:00 PM</p>
+                        <p>Duration: 1 day</p>
+                        <p>Deadline: July 5, 2024</p>
+                        <p>Description: Adam Doe has been diagnosed with coronary artery disease and requires immediate intervention.</p>
+
+                        <a href="fullMed.html">Details</a>
+                    </div>
+                    <div class="buttons">
+                        <button class="reject-btn">Delete</button>
+                    </div>
+                </div>
+    
+                <!-- Medical Supplies -->
+               
+    
+               
+                <!-- Add more item cards for other categories -->
+            </div>
+            <!-- Add more card elements here -->
+    
+</body>
+</html>

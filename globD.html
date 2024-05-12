@@ -3,64 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Initiative Details</title>
+    <title>Donor Menu</title>
     <link rel="stylesheet" href="adminMenu.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="admin.js"></script>
+    <script src="donor.js"></script>
 </head>
 <body>
-    <a href="adminProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a>     <div class="container">
+   <a href="donorProfile.html"><img class="profile-img" src="resources/profile.png" alt="Profile Image"></a> 
+   <a href="donorNotif.html"><img class="notif-img" src="resources/notif.png" alt="Profile Image"></a> 
+    <div class="container">
         <div class="sidebar">
             <img src="resources/logoR.png" alt="Logo">
             <ul>
                 <li class="dropdown">
                     <a href="#" class="dropdown-btn">View <i class='bx bx-caret-down'></i></a>
                     <div class="dropdown-content">
-                        <a href="viewOrg.html">- Organizations</a>
-                        <a href="viewDonor.html">- Donors</a>
+                        <a href="Items.html">- Requested Items</a>
+                        <a href="viewMed.html">- Medical Cases</a>
+                        <a href="viewTeach.html">- Teaching Cases</a>
+                        <a href="orgDonor.html">- View Organization</a>
+
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Review Submissions <i class='bx bx-caret-down'></i></a>
-                    <div class="dropdown-content">
-                        <a href="orgReq.html">- Organization Submissions</a>
-                        <a href="donorReq.html">- Donor Submissions</a>
-                    </div>
-                </li>
-               
+                
+                
             </ul>
 
             <a href="index.html" class="logout">
-                Logout
-            </a>
-            <a href="adminMenu.html" class="home">
-                Home
-            </a>
+                Logout        </a>
+                <a href="donorMenu.html" class="home">
+                    Home        </a>
+            
         </div>
         <div class="content">
+
             <div class="organization-details">
-                <img src="resources/health initiative.jpeg" alt="Organization Logo">
+                <img src="resources/global aid.png" alt="Organization Logo">
                 <div class="details">
-                    <h2>Community Health Initiative</h2>
-                    <p><strong>Location:</strong> Geneva, Switzerland</p>
-                    <p><strong>Description:</strong> Working towards promoting health and wellness in local communities through awareness campaigns and medical assistance programs.</p>
-                    <p><strong>Website:</strong> <a href="https://www.healthinitiative.org">www.healthinitiative.org</a></p>
-                    <p><strong>Contact:</strong> info@healthinitiative.org</p>
+                    <h2>Global Aid Foundation</h2>
+                    <p><strong>Location:</strong> London, UK</p>
+                    <p><strong>Description:</strong> The Global Aid Foundation is a nonprofit committed to aiding communities globally, focusing on poverty, disasters, and conflict. We empower communities through sustainable projects and partnerships, enhancing lives and fostering resilience.</p>
+                    <p><strong>Website:</strong> <a href="https://www.globalaidfoundation.org">www.globalaidfoundation.org</a></p>
+                    <p><strong>Contact:</strong> info@globalaidfoundation.org</p>
                     <p><strong>Location:</strong> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220989.4228828094!2d30.97552059453124!3d30.066688700000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f7dc194046d%3A0x10bb104a89b90e4!2zR3JlZWsgSG9zcGl0YWwgQmxvb2QgQmFuayA6OiDYqNmG2YMg2KfZhNiv2YUg2KfZhNmF2LPYqti02YHZiSDYp9mE2YrZiNmG2KfZhtmK!5e0!3m2!1sen!2seg!4v1715108175991!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
 
                     <!-- Representative Information -->
                     <h3>Representatives:</h3>
                     <ul>
-                        <li>Michael Brown - CEO</li>
-                        <li>Sarah Lee - Operations Manager</li>
+                        <li>John Doe - CEO</li>
+                        <li>Jane Smith - Operations Manager</li>
                     </ul>
                     <!-- Documentation Link -->
                     <h3>Documentation:</h3>
                     <a href="resources/orgDoc.pdf" target="_blank">View Documentation</a>
                 </div>
             </div>
-        </div>
+                
+            
+            <!-- Add more card elements here -->
     </div>
-    <script src="adminMenu.js"></script>
 </body>
 </html>
