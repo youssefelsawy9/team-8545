@@ -95,6 +95,21 @@ body, html {
 
 
 
+.add-img {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 180px;
+    right: 10px;
+
+}
+
+.add-img:hover {
+    transform: scale(1.1);
+}
+
+
+
 .logout{
     color: #fff;
     position: absolute;
@@ -429,3 +444,6 @@ body, html {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+

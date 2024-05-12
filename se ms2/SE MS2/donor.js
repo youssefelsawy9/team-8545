@@ -198,6 +198,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+
+    const finishButton = document.getElementById('finish-button');
+
+  
+
+    // Event listener for the finish button
+    finishButton.addEventListener('click', function () {
+        // Show the success popup when the finish button is clicked
+        const popup = document.getElementById('popup');
+        popup.style.display = 'block';
+    });
     
 });
 
